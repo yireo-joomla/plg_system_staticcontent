@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_STATICCONTENT</name>
+	<author>Yireo</author>
+	<creationDate>April 2014</creationDate>
+	<copyright>Copyright (C) 2014 Yireo.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<authorEmail>info@yireo.com</authorEmail>
+	<authorUrl>http://www.yireo.com/</authorUrl>
+	<version>1.2.2</version>
+	<description>PLG_SYSTEM_STATICCONTENT_DESC</description>
+
+	<files>
+		<filename plugin="staticcontent">staticcontent.php</filename>
+        <filename>index.html</filename>
+	</files>
+
+    <languages>
+        <language tag="en-GB">en-GB.plg_system_staticcontent.ini</language>
+        <language tag="en-GB">en-GB.plg_system_staticcontent.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+		        <field name="unsecure_url" type="text" default="" label="PLG_SYSTEM_STATICCONTENT_FIELD_UNSECURE_URL" description="PLG_SYSTEM_STATICCONTENT_FIELD_UNSECURE_URL_DESC" size="40" />
+        		<field name="secure_url" type="text" default="" label="PLG_SYSTEM_STATICCONTENT_FIELD_SECURE_URL" description="PLG_SYSTEM_STATICCONTENT_FIELD_SECURE_URL_DESC" size="40" />
+		        <field name="use_images" class="btn-group" type="radio" default="1" label="PLG_SYSTEM_STATICCONTENT_FIELD_USE_IMAGES" description="PLG_SYSTEM_STATICCONTENT_FIELD_USE_IMAGES_DESC">
+        			<option value="0">JNO</option>
+		        	<option value="1">JYES</option>
+        		</field>
+		        <field name="use_media" class="btn-group" type="radio" default="1" label="PLG_SYSTEM_STATICCONTENT_FIELD_USE_MEDIA" description="PLG_SYSTEM_STATICCONTENT_FIELD_USE_MEDIA_DESC">
+        			<option value="0">JNO</option>
+		        	<option value="1">JYES</option>
+        		</field>
+		        <field name="use_template_images" class="btn-group" type="radio" default="1" label="PLG_SYSTEM_STATICCONTENT_FIELD_USE_TEMPLATE_IMAGES" description="PLG_SYSTEM_STATICCONTENT_FIELD_USE_TEMPLATE_IMAGES_DESC">
+        			<option value="0">JNO</option>
+		        	<option value="1">JYES</option>
+        		</field>
+		        <field name="use_template_css" class="btn-group" type="radio" default="1" label="PLG_SYSTEM_STATICCONTENT_FIELD_USE_TEMPLATE_CSS" description="PLG_SYSTEM_STATICCONTENT_FIELD_USE_TEMPLATE_CSS_DESC">
+        			<option value="0">JNO</option>
+		        	<option value="1">JYES</option>
+        		</field>
+		        <field name="use_template_js" class="btn-group" type="radio" default="1" label="PLG_SYSTEM_STATICCONTENT_FIELD_USE_TEMPLATE_JS" description="PLG_SYSTEM_STATICCONTENT_FIELD_USE_TEMPLATE_JS_DESC">
+        			<option value="0">JNO</option>
+		        	<option value="1">JYES</option>
+        		</field>
+		        <field name="use_includes" class="btn-group" type="radio" default="0" label="PLG_SYSTEM_STATICCONTENT_FIELD_USE_INCLUDES" description="PLG_SYSTEM_STATICCONTENT_FIELD_USE_INCLUDES_DESC">
+        			<option value="0">JNO</option>
+		        	<option value="1">JYES</option>
+        		</field>
+		        <field name="use_cache" class="btn-group" type="radio" default="0" label="PLG_SYSTEM_STATICCONTENT_FIELD_USE_CACHE" description="PLG_SYSTEM_STATICCONTENT_FIELD_USE_CACHE_DESC">
+        			<option value="0">JNO</option>
+		        	<option value="1">JYES</option>
+        		</field>
+            </fieldset>
+        </fields>
+    </config>
+
+	<updateservers>
+		<server type="extension" priority="1" name="plg_system_staticcontent">http://www.yireo.com/updates/plg_system_staticcontent.xml</server>
+	</updateservers>
+</extension>
