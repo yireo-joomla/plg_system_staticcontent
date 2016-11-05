@@ -58,6 +58,6 @@
     </config>
 
 	<updateservers>
-		<server type="extension" priority="1" name="plg_system_staticcontent">http://www.yireo.com/updates/plg_system_staticcontent.xml</server>
+		<server type="extension" priority="1" name="plg_system_staticcontent">https://www.yireo.com/updates/plg_system_staticcontent.xml</server>
 	</updateservers>
 </extension>
